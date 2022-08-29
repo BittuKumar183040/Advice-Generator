@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+<div class="mainContainer">
+  <section class="container">
+    <p class="advice"><span>Advice </span>#117</p>
+    <p class="quote">
+    "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+    </p>
+    <img class="divider" src="./images/pattern-divider-desktop.svg" alt="------">
+  </section>  
+  <div class="btn">
+    <img src="./images/icon-dice.svg" alt=":o:">
+  </div>
+</div>
+<footer>
+  <script>
+    const mobileDivier=document.querySelector(".divider");
+    if(window.innerWidth <= 600){
+      mobileDivier.src="./images/pattern-divider-mobile.svg";
+    }
+  </script>
+</footer>
+</body>
+</html>

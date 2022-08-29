@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+:root{
+    --Light_Cyan: hsl(193, 38%, 86%);
+    --Neon_Green: hsl(150, 100%, 66%);
+    --Grayish_Blue: hsl(217, 19%, 38%);
+    --Dark_GrayishBlue: hsl(217, 19%, 24%);
+    --Dark_Blue: hsl(218, 23%, 16%);
+    /* Font quote */
+    --Font_size: 28px;
+    --Family:'Manrope', sans-serif;
+    --Weights: 800;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    /* background-image: url(./design/mobile-desktop.jpg); */
+    background-color: var(--Dark_GrayishBlue);
+}
+.mainContainer{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-top: 16px;
+    transform: translate(-50%, -50%);
+    
+}
+.container{
+    width: 540px;
+    height: 335px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--Family);
+    background-color: rgba(53, 53, 53,0.8); 
+    padding:0 40px;
+}
+
+.advice{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: var(--Neon_Green);
+    padding-top: 50px;
+}
+.quote{
+    font-weight: var(--Weights);
+    font-size: var(--Font_size);
+    color: var(--Light_Cyan);
+    padding:25px 0;
+}
+.divider{
+    padding:15px 0;
+}
+.btn{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -35px);
+    width: 30px;
+    height: 30px;
+    background-color: var(--Neon_Green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:33px;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: box-shadow 0.2s;
+}
+.btn:hover{
+    box-shadow: 0 0 25px var(--Neon_Green);
+}
+@media screen and (max-width:376px){
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:600px){
+    .mainContainer{
+        position: absolute;
+        left:50%;
+        top: 50%;
+        margin-top: 24px;
+        transform: translate(-50%, -50%);
+    }
+    .container{
+        width: 345px;
+        height: 315px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: var(--Family);
+        background-color: rgba(53, 53, 53,0.8); 
+        padding:0 20px;
+    }
+    .advice{
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        padding-top: 39px;
+    }
+    .quote{
+        font-weight: var(--Weights);
+        font-size:23px;
+        padding:23px 0;
+        line-height: 33px;
+    }
+    .divider{
+        padding:0 5px;
+    }
+    .btn{
+        position: relative;
+        left: 50%;
+        transform: translate(-51%, -34px);
+        width: 30px;
+        height: 30px;
+        background-color: var(--Neon_Green);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:33px;
+        border-radius: 50%;
+    }
+}
