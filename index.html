@@ -11,23 +11,18 @@
 <body>
 <div class="mainContainer">
   <section class="container">
-    <p class="advice"><span>Advice </span>#117</p>
+    <p class="advice">Advice #<span id="AdID"></span></p>
     <p class="quote">
-    "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+    "Loading..."
     </p>
     <img class="divider" src="./images/pattern-divider-desktop.svg" alt="------">
   </section>  
-  <div class="btn">
+  <div class="btn" onclick=adviceChanger()>
     <img src="./images/icon-dice.svg" alt=":o:">
   </div>
 </div>
 <footer>
-  <script>
-    const mobileDivier=document.querySelector(".divider");
-    if(window.innerWidth <= 600){
-      mobileDivier.src="./images/pattern-divider-mobile.svg";
-    }
-  </script>
+  <script src="./script.js"></script>
 </footer>
 </body>
 </html>
